@@ -8,12 +8,13 @@ before_install: echo 'before install'
 
 install: 
   - echo 'install begin'
-  - false
+  - true
   - echo 'install end'
 before_script: echo 'before script'
 script: 
   - echo 'script start'
   - phpunit Test.php
+  - false
   - echo 'script end'
 after_success: echo 'after success'
 after_failure: echo 'after failure'
